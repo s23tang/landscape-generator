@@ -38,8 +38,9 @@ class Point:
 
 
 class XOrderedSegment:
-    def __init__(self):
+    def __init__(self, *points):
         self.points = []
+        self.add(*points)
 
     @property
     def pairwise_points(self):

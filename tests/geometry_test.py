@@ -65,6 +65,11 @@ class TestXOrderedSegment:
         s.add(p4)
         assert s.points == [p3, p4, p1, p2]
 
+    def test_create_with_multiple_points(self):
+        p1, p2, p3 = Point(1, 1), Point(-1, -5), Point(20, -5)
+        s = XOrderedSegment(p1, p2, p3)
+        assert s.points == [p2, p1, p3]
+
     def test_pairwise_points(self):
         s = XOrderedSegment()
         assert s.points == []

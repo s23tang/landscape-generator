@@ -1,5 +1,5 @@
 import pytest
-from landscape.colors import RGBColor
+from landscape.color import RGBColor
 
 
 class TestRGBColor:
